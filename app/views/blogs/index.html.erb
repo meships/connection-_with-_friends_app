@@ -13,7 +13,7 @@
     <tr>
       <td><%= blog.title %></td>
       <td><%= blog.content %></td>
-      <td><%= image_tag blog.image.url, size: "40" %></td>
+      <td><%= image_tag blog.image.url, width: '50', height: '50' %></td>
 
       <td><%= link_to '詳細を確認する', blog_path(blog.id) %></td>
       <td><%= link_to "ブログを編集する", edit_blog_path(blog.id), data: { confirm: '本当に編集していいですか？' } %></td>
