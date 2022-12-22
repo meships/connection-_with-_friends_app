@@ -2,7 +2,7 @@
 <p>タイトル: <%= @blog.title %></p>
 <p>内容: <%= @blog.content %></p>
   <p>画像</p>
-  <p><%= image_tag @blog.image.url %></p>
+  <p><%= image_tag @blog.image.url, size: "" %></p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %>
-<%= link_to 'Back', blogs_path %>
+<%= link_to '編集', edit_blog_path(@blog) %>
+<%= link_to '戻る', blogs_path %>

@@ -10,6 +10,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header class="header">
+    <h1>繋がりたいアプリ</h1>
+  </header>
+
   <body>
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "#{key}") %>
@@ -25,5 +29,9 @@
 
     <%= yield %>
   </body>
+
+  <footer class="footer">
+  <p>繋がれないから課題が終わらん</p>
+  </footer>
 
 </html>
