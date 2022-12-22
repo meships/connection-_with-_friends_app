@@ -51,3 +51,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bcrypt'
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'net-smtp'
+gem 'net-imap'
+gem 'net-pop'
